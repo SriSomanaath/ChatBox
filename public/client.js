@@ -45,3 +45,7 @@ function appendMessage(msg, type) {
 function scrollToBottom() {
     messageArea.scrollTop = messageArea.scrollHeight
 }
+
+socket.on('message', (msg)=>{
+    console.log(msg)
+})
